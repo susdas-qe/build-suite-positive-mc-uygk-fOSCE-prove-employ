@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: go-component-kuxy
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: go-component-kuxy
+    app.kubernetes.io/part-of: build-suite-positive-mc-uygk
+  name: go-component-kuxydugy
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: go-component-kuxy
+    weight: null
+status: {}

@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: go-component-kuxy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-bsve-tenant/build-suite-positive-mc-uygk/go-component-kuxy@sha256:946d110b39ce9cad7582e6408cd5237f5678bbceede5758db80546e370dbf421
+        name: my-go
+        resources: {}
+status: {}
