@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: go-component-kuxy
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-appstudio-qe/build-e2e-bsve-tenant/build-suite-positive-mc-uygk/go-component-kuxy@sha256:946d110b39ce9cad7582e6408cd5237f5678bbceede5758db80546e370dbf421
         name: my-go
         ports:
         - containerPort: 8081
